@@ -7,9 +7,12 @@ import org.springframework.stereotype.Component;
 
 public class MemberServiceImpl implements IMemberService{
 
-    @Autowired
+
     private IMemberRepository memberRepository;
 
+    public MemberServiceImpl(IMemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {
