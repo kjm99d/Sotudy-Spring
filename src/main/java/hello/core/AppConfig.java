@@ -17,6 +17,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class AppConfig {
+
     @Bean
     public IMemberService memberService() {
         MemberServiceImpl memberService = new MemberServiceImpl(memberRepository());
