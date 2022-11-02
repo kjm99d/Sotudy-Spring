@@ -21,14 +21,14 @@ public class AppConfig {
     @Bean
     public IMemberService memberService() {
         MemberServiceImpl memberService = new MemberServiceImpl(memberRepository());
-        System.out.println("[Register Bean] memberService()     => " + memberService);
+        //System.out.println("[Register Bean] memberService()     => " + memberService);
         return memberService;
     }
 
     @Bean
     public IMemberRepository memberRepository() {
         IMemberRepository memberRepository = new MemoryMemberRepository();
-        System.out.println("[Register Bean] memberRepository()  => " + memberRepository);
+        //System.out.println("[Register Bean] memberRepository()  => " + memberRepository);
         return memberRepository;
     }
 
