@@ -1,9 +1,6 @@
-package hello.core;
+package hello.core.order;
 
-import hello.core.AppConfig;
 import hello.core.member.*;
-import hello.core.order.Order;
-import hello.core.order.OrderService;
 import org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebApplicationContext;
 import org.springframework.context.ApplicationContext;
 

@@ -18,16 +18,6 @@ public class Order {
         return itemPrice - discountPrice;
     }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "memberId=" + memberId +
-                ", itemName='" + itemName + '\'' +
-                ", itemPrice=" + itemPrice +
-                ", discountPrice=" + discountPrice +
-                '}';
-    }
-
     public Long getMemberId() {
         return memberId;
     }
@@ -58,5 +48,16 @@ public class Order {
 
     public void setDiscountPrice(int discountPrice) {
         this.discountPrice = discountPrice;
+    }
+
+    // 객체를 호출하면 tostring()을 실행한다.
+    @Override
+    public String toString() {
+        return "Order{" +
+                "memberId=" + memberId +
+                ", itemName='" + itemName + '\'' +
+                ", itemPrice=" + itemPrice +
+                ", discountPrice=" + discountPrice +
+                '}';
     }
 }
